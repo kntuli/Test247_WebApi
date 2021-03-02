@@ -9,5 +9,6 @@ namespace Test247_WebApi.DataProvider
     public interface IUserDataProvider
     {
         Task AddUser(UserModel item);
+        Task<IEnumerable<UserModel>> GetUser(string userName, string password);
     }
 }
